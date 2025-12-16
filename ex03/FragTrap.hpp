@@ -6,14 +6,14 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 16:02:49 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 16:18:39 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 18:34:05 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include "ClapTrap.hpp"
 
-class	FragTrap : public ClapTrap
+class	FragTrap : virtual public ClapTrap
 {
 	public:
 		FragTrap(void);

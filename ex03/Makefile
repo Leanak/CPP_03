@@ -6,11 +6,11 @@
 #    By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/26 15:10:11 by lenakach          #+#    #+#              #
-#    Updated: 2025/12/16 18:18:13 by lenakach         ###   ########.fr        #
+#    Updated: 2025/12/16 18:51:11 by lenakach         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTrap
+NAME = DiamondTrap
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror --std=c++98 -I.
@@ -18,6 +18,7 @@ CFLAGS = -Wall -Wextra -Werror --std=c++98 -I.
 SRC = ClapTrap.cpp \
 	  ScavTrap.cpp \
 	  FragTrap.cpp \
+	  DiamondTrap.cpp \
 	  main.cpp
 
 OBJ = $(SRC:.cpp=.o)

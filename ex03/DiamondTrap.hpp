@@ -6,16 +6,16 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 18:19:09 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 18:21:32 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 18:47:38 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include <iostream>
 #include "FragTrap.hpp"
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-class	DiamondTrap : public ClapTrap, public FragTrap
+class	DiamondTrap : public ScavTrap, public FragTrap
 {
 	private:
 		std::string	_name;
@@ -30,4 +30,6 @@ class	DiamondTrap : public ClapTrap, public FragTrap
 		~DiamondTrap(void);
 		//Copy assignment operator
 		DiamondTrap	&operator=(const DiamondTrap &other);
+		//Fonction membre
+		void	whoAmI(void);
 };
