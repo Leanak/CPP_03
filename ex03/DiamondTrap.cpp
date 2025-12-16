@@ -6,7 +6,7 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 18:21:40 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 18:50:17 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 19:01:50 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ DiamondTrap	&DiamondTrap::operator=(const DiamondTrap &other)
 }
 
 //Name constructor
-DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
+DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name")
 {
 	this->_name = name;
 

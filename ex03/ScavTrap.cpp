@@ -6,7 +6,7 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 14:18:06 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 16:14:55 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 19:02:11 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,8 @@ ScavTrap::ScavTrap(const ScavTrap &other)
 	std::cout << "ScavTrap: Copy constructor called" << std::endl;
 }
 //Constructeur avec name
-ScavTrap::ScavTrap(std::string name)
+ScavTrap::ScavTrap(std::string name): ClapTrap(name)
 {
-	this->_name = name;
 	this->_energyPoints = 50;
 	this->_attackDamage = 20;
 	this->_hitPoints = 100;

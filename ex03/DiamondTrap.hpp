@@ -6,7 +6,7 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 18:19:09 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 18:47:38 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 19:00:49 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
-class	DiamondTrap : public ScavTrap, public FragTrap
+class	DiamondTrap : virtual public ScavTrap, virtual public FragTrap
 {
 	private:
 		std::string	_name;

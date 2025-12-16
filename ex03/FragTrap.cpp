@@ -6,7 +6,7 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 16:05:10 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 18:17:15 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 19:02:07 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,8 @@ FragTrap	&FragTrap::operator=(const FragTrap &other)
 	return (*this);
 }
 
-FragTrap::FragTrap(std::string name)
+FragTrap::FragTrap(std::string name): ClapTrap(name)
 {
-	this->_name = name;
 	this->_energyPoints = 100;
 	this->_attackDamage = 30;
 	this->_hitPoints = 100;
