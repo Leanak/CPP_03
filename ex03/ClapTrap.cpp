@@ -6,7 +6,7 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 16:11:59 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 16:14:46 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 18:58:06 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,7 @@ ClapTrap::ClapTrap(const ClapTrap &other)
 //constructeur name
 ClapTrap::ClapTrap(std::string name)
 {
+	this->_name = name;
 	std::cout << "Name constructor called" << std::endl;
 }
 
