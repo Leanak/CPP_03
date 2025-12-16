@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/11 16:08:17 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/16 16:11:01 by lenakach         ###   ########.fr       */
+/*   Created: 2025/12/16 15:49:12 by lenakach          #+#    #+#             */
+/*   Updated: 2025/12/16 16:14:37 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 class	ClapTrap
 {
-	private:
+	protected:
 		std::string	_name;
 		int	_hitPoints = 10;
 		int	_energyPoints = 10;
@@ -40,4 +40,3 @@ class	ClapTrap
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 };
-

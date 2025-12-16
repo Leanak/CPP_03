@@ -6,7 +6,7 @@
 /*   By: lenakach <lenakach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 17:41:00 by lenakach          #+#    #+#             */
-/*   Updated: 2025/12/12 17:51:28 by lenakach         ###   ########.fr       */
+/*   Updated: 2025/12/16 15:45:54 by lenakach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,10 @@ int	main(void)
 {
 	ClapTrap dragon("Dragon");
 	ClapTrap princess("Princess");
-	
 
-	dragon.setEnergyPoints(0);
 	dragon.attack("Princess");
-	std::cout << "AVANT ATTAQUE" << std::endl;
-	std::cout << "Dragon EnergyPoints: " << dragon.getEnergypoints() << std::endl;
+	std::cout << "APRES ATTAQUE" << std::endl;
+	std::cout << "Dragon EnergyPoints: " << dragon.getEnergyPoints() << std::endl;
 	std::cout << "Dragon Hitpoint: " << dragon.getHitPoints() << std::endl;
 	std::cout << "Dragon AttackDamage: " << dragon.getAttackDamage() << std::endl;
 
